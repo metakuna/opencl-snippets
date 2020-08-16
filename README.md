@@ -31,7 +31,8 @@ To build any C library you need:
     3.1 Hardware version: OpenCL 1.2
     3.2 Software version: 1.2 (May 26 2020 20:46:32)
     3.3 OpenCL C version: OpenCL C 1.2
-    3.4 Parallel compute units: 20```
+    3.4 Parallel compute units: 
+    ```
 
 ## What's the point of this repo
  - a getting started guide for OpenCl
