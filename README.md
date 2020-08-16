@@ -6,7 +6,7 @@ To build any C library you need:
  - To include the necessary headers in your code. For OpenCL this is just the file `OpenCL/opencl.h` on mac, or `CL/cl.h` on other platforms
  - To have the folder where these header files live in your compilers include path. On Mac `OpenCL/opencl.h` is in the default include path but in general you can point to an include folder when you compile using ```clang -I/path/to/include/folder some_program.c```
  - The actual compiled library somewhere in your compilers library search path. You can see which folders `clang` is searching in by doing `clang -Xlinker -v`
- - To link to the compiled library, which we will do with `-framework OpenCL` (because apparently it's a framework not a library??)
+ - To link to the compiled library, which we will do with `-framework OpenCL` (on mac at least it's a framework not a library, on other platforms you might do it like -lOpenCL)
 
 ## building devices.c (Mac, using clang)
  - clone this repo (or copy the contents of `devices.c` into a file)
@@ -31,7 +31,7 @@ To build any C library you need:
     3.1 Hardware version: OpenCL 1.2
     3.2 Software version: 1.2 (May 26 2020 20:46:32)
     3.3 OpenCL C version: OpenCL C 1.2
-    3.4 Parallel compute units: 
+    3.4 Parallel compute units: 20
     ```
 
 ## What's the point of this repo
