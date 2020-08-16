@@ -16,7 +16,8 @@ To build any C library you need:
  - OpenCL is installed by default so run
    ```clang devices.c -framework OpenCL```
  - now if you run `./a.out` it should print out the devices you have available, for me this looks like
-   ```1. Device: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+   ```
+    1. Device: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
     1.1 Hardware version: OpenCL 1.2
     1.2 Software version: 1.1
     1.3 OpenCL C version: OpenCL C 1.2
